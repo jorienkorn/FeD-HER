@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <title>Account aanmaken</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="afbeeldingen/linklogo-10.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                    <img src="afbeeldingen/http_%252F%252Fupload.wikimedia.org%252Fwikipedia%252Fcommons%252F1%252F13%252FLogo_NS.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="search.html">
+                    <img src="afbeeldingen/search-03%20donker-03.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="mijnlijst.html">
+                    <img src="afbeeldingen/flag-01%20donker-01%20v2-01.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="alleverhalen.html">
+                    <img src="afbeeldingen/list-04%20donker-04.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html">
+                    <img src="afbeeldingen/account-06.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="index.html" id='account'>
+        <fieldset>
+            <legend>Maak een account aan</legend>
+            <label for="name">Voornaam</label>
+            <input type="text" id="name">
+
+            <label for="mail">E-mailadres</label>
+            <input type="text" id="mail" placeholder="voorbeeld@email.com">
+
+            <label for="password">Wachtwoord</label>
+            <input type="password" id="password" placeholder="Minimaal 6 karakters">
+
+            <label for="password">Wachtwoord bevestigen</label>
+            <input type="password" placeholder="Minimaal 6 karakters">
+
+            <button>Submit</button>
+        </fieldset>
+    </form>
+
+    <script src="script/accountscript.js"></script>
+</body>
+
+</html>

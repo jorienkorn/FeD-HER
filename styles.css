@@ -514,7 +514,7 @@ section#reviewoverzicht p {
 }
 
 section#reviewoverzicht {
-    margin-bottom: 0em;
+    margin-bottom: 1em;
     padding-bottom: 1em;
 }
 
@@ -556,10 +556,6 @@ main a img {
 
 
 /** ACCOUNT **/
-
-form#account legend {
-    width: 100%;
-}
 
 form#account input {
     margin-top: 0.2em;

@@ -638,7 +638,15 @@ body#verhaal {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em
+    height: 36em;
+}
+
+body#verhaal img {
+    padding-top: 12em;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -764,5 +772,10 @@ body#verhaal {
 
     img#verhaal {
         width: 100%;
+    }
+
+    body#verhaal {
+        width:auto;
+        max-height: 42em;
     }
 }

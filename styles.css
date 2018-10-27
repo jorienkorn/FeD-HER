@@ -727,9 +727,15 @@ body#verhaal {
 
 }
 
+
+
 @media (min-width: 50em) {
-    height: 62em
+    body#verhaal {
+        height: 62em
+    }
 }
+
+
 
 @media (min-width: 65em) {
 

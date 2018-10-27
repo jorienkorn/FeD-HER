@@ -507,10 +507,18 @@ section#reviewoverzicht img {
     margin-left: 8em;
 }
 
+section#reviewoverzicht h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+
+}
+
 section#reviewoverzicht p {
     border: 1px solid #e6e6e9;
     padding: 1em;
-    line-height: 1.5em
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 0;
 }
 
 section#reviewoverzicht {
@@ -624,14 +632,20 @@ a#terugknop:hover {
     transition: 2s;
 }
 
-img#verhaal {
-    box-sizing: border-box;
-    padding: 2em;
-    width: 100vw;
-    max-height: 45em;
-    margin: 3em auto 0 auto;
-    background: black;
+body#verhaal img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    display: block;
+}
 
+body#verhaal {
+    background: url(afbeeldingen/tabletbackground.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    height: 36em
 }
 
 
@@ -718,6 +732,10 @@ img#verhaal {
         display: inline-block;
     }
 
+}
+
+@media (min-width: 50em) {
+    height: 62em
 }
 
 @media (min-width: 65em) {

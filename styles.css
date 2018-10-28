@@ -638,7 +638,7 @@ body#verhaal {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 body#verhaalzes {
@@ -647,7 +647,7 @@ body#verhaalzes {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 body#verhaalvier {
@@ -656,7 +656,7 @@ body#verhaalvier {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 body#verhaaltwee {
@@ -665,7 +665,7 @@ body#verhaaltwee {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 body#verhaalnul {
@@ -674,7 +674,7 @@ body#verhaalnul {
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 
@@ -766,7 +766,7 @@ body#verhaalnul {
 
 @media (min-width: 40em) {
     body#verhaal {
-        height: 42em;
+        height: 62em;
     }
 }
 

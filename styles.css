@@ -614,7 +614,8 @@ form#account a:hover {
 
 /* HET VERHAAL */
 
-#terugknop, #versnellen {
+#terugknop,
+#versnellen {
     box-sizing: border-box;
     display: block;
     width: 8em;
@@ -627,30 +628,18 @@ form#account a:hover {
     text-align: center;
 }
 
-#terugknop:hover, #versnellen:hover {
+#terugknop:hover,
+#versnellen:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
 
+#versnellen {
+    float: right;
+    margin-top: -2.7em;
+}
+
 body#verhaal {
-    background: url(afbeeldingen/verhaal8sec.gif);
-    background-repeat: no-repeat;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    height: 36em;
-}
-
-body#verhaalzes {
-    background: url(afbeeldingen/verhaal6sec.gif);
-    background-repeat: no-repeat;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    height: 36em;
-}
-
-body#verhaalvier {
     background: url(afbeeldingen/verhaal4sec.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -659,8 +648,35 @@ body#verhaalvier {
     height: 36em;
 }
 
-body#verhaaltwee {
+body#verhaalzes {
     background: url(afbeeldingen/verhaal2sec.gif);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    height: 36em;
+}
+
+body#verhaalvier {
+    background: url(afbeeldingen/verhaal1sec.gif);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    height: 36em;
+}
+
+body#verhaaltwee {
+    background: url(afbeeldingen/verhaal0,5sec.gif);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    height: 36em;
+}
+
+body#verhaalnulkomma {
+    background: url(afbeeldingen/verhaal0,2sec.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
@@ -765,8 +781,18 @@ body#verhaalnul {
 
 
 @media (min-width: 40em) {
-    body#verhaal, body#verhaalzes, body#verhaalvier, body#verhaaltwee, body#verhaalnul {
+    body#verhaal,
+    body#verhaalzes,
+    body#verhaalvier,
+    body#verhaaltwee,
+    body#verhaalnul {
         height: 62em;
+    }
+
+
+    #versnellen {
+        float: right;
+        margin-top: -2.7em;
     }
 }
 
@@ -802,7 +828,12 @@ body#verhaalnul {
     }
 
     body#verhaal {
-        width:auto;
+        width: auto;
         max-height: 42em;
+    }
+
+    #versnellen {
+        float: right;
+        margin-top: -2.7em;
     }
 }

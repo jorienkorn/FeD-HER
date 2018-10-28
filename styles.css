@@ -633,7 +633,7 @@ a#terugknop:hover {
 }
 
 body#verhaal {
-    background: url(afbeeldingen/tabletbackground.png);
+    background: url(afbeeldingen/test2.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
@@ -739,7 +739,7 @@ body#verhaal img {
 
 @media (min-width: 40em) {
     body#verhaal {
-        height: 42em
+        height: 42em;
     }
 }
 

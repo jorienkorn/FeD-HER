@@ -775,6 +775,11 @@ body#verhaalnul {
     section#verhaal-detail p {
         display: inline-block;
     }
+    
+    #versnellen {
+        float: right;
+        margin-top: 0em;
+    }
 
 }
 
@@ -785,15 +790,11 @@ body#verhaalnul {
     body#verhaalzes,
     body#verhaalvier,
     body#verhaaltwee,
+    body#verhaalnulkomma,
     body#verhaalnul {
         height: 62em;
     }
 
-
-    #versnellen {
-        float: right;
-        margin-top: -2.7em;
-    }
 }
 
 
@@ -834,6 +835,6 @@ body#verhaalnul {
 
     #versnellen {
         float: right;
-        margin-top: -2.7em;
+        margin-top: 0em;
     }
 }

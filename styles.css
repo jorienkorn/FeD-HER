@@ -640,12 +640,11 @@ form#account a:hover {
 }
 
 body#verhaal {
-    background: url(afbeeldingen/verhaal4sec.gif);
+    background: url(afbeeldingen/verhaal%20rechtop.jpg);
     background-repeat: no-repeat;
-    width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 35em;
 }
 
 body#verhaalzes {

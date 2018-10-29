@@ -661,11 +661,11 @@ form#account p a:hover {
 }
 
 body#verhaal {
-    background: url(afbeeldingen/verhaaal.jpg);
+    background: url(afbeeldingen/testtest.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 36.5em;
+    height: 37em;
     width: 100vw;
 }
 

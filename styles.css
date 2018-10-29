@@ -79,7 +79,16 @@ header > nav > ul > li:nth-child(3) > a > img.micro {
     }
 }
 
+
+
+
+
 /** content geel blok **/
+
+section#verder-lezen p {
+    line-height: 1.5;
+    color: black;
+}
 
 section#verder-lezen {
     background: linear-gradient(180deg, rgba(255, 201, 23, .9) 0, #ffc917 3em, #ffc917);
@@ -357,11 +366,24 @@ main {
     margin-bottom: 1em;
 }
 
-main a {
+main a:nth-child(1) {
+    background: url(afbeeldingen/thumbnail1.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+main a:nth-child(2) {
+    background: url(afbeeldingen/thumbnail2.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+main a:nth-child(3) {
     background: url(afbeeldingen/itemgroot.jpg);
     background-size: cover;
     text-decoration: none;
 }
+
 
 main a article {
     background: white;
@@ -560,6 +582,22 @@ main a img {
     margin-top: 0.5em;
 }
 
+section#lege-lijst a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    background: #0079d3;
+    color: white;
+    font-weight: 400;
+    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    text-decoration: none;
+    text-align: center;
+}
+
+section#lege-lijst p {
+    line-height: 1.5;
+}
 
 
 
@@ -617,7 +655,7 @@ form#account p a {
     background: none;
     padding: 0;
     margin: 0;
-    width: 2em;
+    width: 3em;
     display: inline;
     box-shadow: none;
     text-decoration: underline;
@@ -660,7 +698,7 @@ form#account p a:hover {
     margin-top: -2.7em;
 }
 
-body#verhaal {
+body#verhaal4sec {
     background: url(afbeeldingen/v24s.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -669,7 +707,7 @@ body#verhaal {
     width: 100vw;
 }
 
-body#verhaalzes {
+body#verhaal2sec {
     background: url(afbeeldingen/v22s.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -678,7 +716,7 @@ body#verhaalzes {
     height: 37em;
 }
 
-body#verhaalvier {
+body#verhaal1sec {
     background: url(afbeeldingen/v21s.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -687,7 +725,7 @@ body#verhaalvier {
     height: 37em;
 }
 
-body#verhaaltwee {
+body#verhaal05sec {
     background: url(afbeeldingen/v205s.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -696,7 +734,7 @@ body#verhaaltwee {
     height: 37em;
 }
 
-body#verhaalnulkomma {
+body#verhaal02sec {
     background: url(afbeeldingen/v202s.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -705,7 +743,7 @@ body#verhaalnulkomma {
     height: 37em;
 }
 
-body#verhaalnul {
+body#verhaal00sec {
     background: url(afbeeldingen/v200s.gif);
     background-repeat: no-repeat;
     width: 100vw;
@@ -713,6 +751,7 @@ body#verhaalnul {
     background-size: cover;
     height: 37em;
 }
+
 
 
 
@@ -752,10 +791,13 @@ body#verhaalnul {
         width: 97%;
     }
 
-    form a,
-        {
+    form a {
         width: 8em;
         float: right;
+    }
+
+    section#lege-lijst a {
+        width: 8em;
     }
 
     a#terugknop {
@@ -806,6 +848,7 @@ body#verhaalnul {
         float: right;
         margin-top: 0;
     }
+
     form#account fieldset {
         padding-bottom: 1em;
     }
@@ -815,12 +858,12 @@ body#verhaalnul {
 
 
 @media (min-width: 40em) {
-    body#verhaal,
-    body#verhaalzes,
-    body#verhaalvier,
-    body#verhaaltwee,
-    body#verhaalnulkomma,
-    body#verhaalnul {
+    body#verhaal4sec,
+    body#verhaal2sec,
+    body#verhaal1sec,
+    body#verhaal05sec,
+    body#verhaal02sec,
+    body#verhaal00sec {
         height: 62em;
     }
 
@@ -866,12 +909,12 @@ body#verhaalnul {
         margin-top: -5em;
     }
 
-    body#verhaal,
-    body#verhaalzes,
-    body#verhaalvier,
-    body#verhaaltwee,
-    body#verhaalnulkomma,
-    body#verhaalnul {
+    body#verhaal4sec,
+    body#verhaal2sec,
+    body#verhaal1sec,
+    body#verhaal05sec,
+    body#verhaal02sec,
+    body#verhaal00sec {
         margin-top: 5em;
         width: auto;
         max-height: 42em;

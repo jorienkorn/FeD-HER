@@ -857,16 +857,11 @@ body#verhaalnul {
         width: 100%;
     }
 
-    body#verhaal {
-        width: auto;
-        max-height: 42em;
-    }
-
     #versnellen {
         float: right;
         margin-top: -5em;
     }
-    
+
     #terugknop {
         margin-top: -5em;
     }
@@ -878,5 +873,7 @@ body#verhaalnul {
     body#verhaalnulkomma,
     body#verhaalnul {
         margin-top: 5em;
+        width: auto;
+        max-height: 42em;
     }
 }

@@ -608,6 +608,27 @@ form#account a:hover {
     transition: 2s;
 }
 
+form#account p {
+    margin-bottom: 0;
+}
+
+form#account p a {
+    color: #0079d3;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 2em;
+    display: inline;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+form#account p a:hover {
+    transition: none;
+    box-shadow: none;
+    color: white;
+}
+
 
 
 
@@ -644,7 +665,7 @@ body#verhaal {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 36.5em;
     width: 100vw;
 }
 
@@ -658,7 +679,7 @@ body#verhaalzes {
 }
 
 body#verhaalvier {
-    background: url(afbeeldingen/verhaal1sec.gif);
+    background: url(afbeeldingen/verhaaal3.jpg);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
@@ -775,10 +796,18 @@ body#verhaalnul {
     section#verhaal-detail p {
         display: inline-block;
     }
-    
+
     #versnellen {
         float: right;
         margin-top: 0em;
+    }
+
+    form#account p {
+        float: right;
+        margin-top: 0;
+    }
+    form#account fieldset {
+        padding-bottom: 1em;
     }
 
 }

@@ -644,12 +644,12 @@ body#verhaal {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 35em;
+    height: 36em;
     width: 100vw;
 }
 
 body#verhaalzes {
-    background: url(afbeeldingen/verhaal2sec.gif);
+    background: url(afbeeldingen/verhaaal2.jpg);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;

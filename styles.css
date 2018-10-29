@@ -661,7 +661,7 @@ form#account p a:hover {
 }
 
 body#verhaal {
-    background: url(afbeeldingen/testtest.gif);
+    background: url(afbeeldingen/v24s.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -670,48 +670,48 @@ body#verhaal {
 }
 
 body#verhaalzes {
-    background: url(afbeeldingen/verhaaal2.jpg);
+    background: url(afbeeldingen/v22s.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 37em;
 }
 
 body#verhaalvier {
-    background: url(afbeeldingen/verhaaal3.jpg);
+    background: url(afbeeldingen/v21s.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 37em;
 }
 
 body#verhaaltwee {
-    background: url(afbeeldingen/verhaal0,5sec.gif);
+    background: url(afbeeldingen/v205s.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 37em;
 }
 
 body#verhaalnulkomma {
-    background: url(afbeeldingen/verhaal0,2sec.gif);
+    background: url(afbeeldingen/v202s.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 37em;
 }
 
 body#verhaalnul {
-    background: url(afbeeldingen/verhaal0sec.gif);
+    background: url(afbeeldingen/v200s.gif);
     background-repeat: no-repeat;
     width: 100vw;
     background-position: center;
     background-size: cover;
-    height: 36em;
+    height: 37em;
 }
 
 
@@ -864,6 +864,19 @@ body#verhaalnul {
 
     #versnellen {
         float: right;
-        margin-top: 0em;
+        margin-top: -5em;
+    }
+    
+    #terugknop {
+        margin-top: -5em;
+    }
+
+    body#verhaal,
+    body#verhaalzes,
+    body#verhaalvier,
+    body#verhaaltwee,
+    body#verhaalnulkomma,
+    body#verhaalnul {
+        margin-top: 5em;
     }
 }

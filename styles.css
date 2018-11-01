@@ -311,10 +311,12 @@ section#filter img {
 
 section#filter h2 {
     margin-right: auto;
+    margin-top: 0.em;
+    font-size: 1.2em
 }
 
 section#filter fieldset {
-    margin-top: -0.1em;
+    margin-top: -0.3em;
     justify-content: flex-end;
     align-items: flex-end;
     border: 0;

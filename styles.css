@@ -9,6 +9,10 @@ body {
     min-width: 20em;
 }
 
+h1,
+h2 {
+    letter-spacing: 0.5px;
+}
 
 
 
@@ -35,44 +39,74 @@ li {
     list-style: none;
 }
 
-nav ul li a img {
-    width: 3em;
-}
-
+/*
 nav ul li a img:hover {
     transform: scale(1.2);
     transition: 0.1s;
 }
+*/
+
+nav ul li span {
+    padding-left: 2.3em;
+}
 
 nav ul li:nth-child(1) {
     margin-right: auto;
-    padding-top: 0.5em;
     margin-left: -2.9em;
 }
 
-nav ul li:nth-child(5) a img {
-    margin-right: -1.2em;
+nav ul li:nth-child(1) a img {
+    width: 10em;
+    padding-bottom: 0;
 }
 
-header {
-    background: url(afbeeldingen/headersmall2.png);
-    height: 25em;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.15s;
+nav ul li:nth-child(5) {
+    margin-right: -1.5em;
 }
 
-header#home {
-    background: url(afbeeldingen/headersmall.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.15s;
+nav ul li a {
+    margin-right: 2.5em;
+    text-decoration: none;
 }
 
-header > nav > ul > li:nth-child(3) > a > img.micro {
-    animation: test 1s;
+nav ul li:nth-child(2) a:before {
+    content: url(afbeeldingen/testzoek2.png);
+    position: absolute;
+}
+
+nav ul li:nth-child(3) a:before {
+    content: url(afbeeldingen/testlijst2.png);
+    position: absolute;
+}
+
+nav ul li:nth-child(4) a:before {
+    content: url(afbeeldingen/testbib2.png);
+    position: absolute;
+}
+
+nav ul li:nth-child(5) a:before {
+    content: url(afbeeldingen/testaccount2.png);
+    position: absolute;
+}
+
+nav ul li a:hover:before {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+nav ul li span {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: #003082;
+    display: none;
+}
+
+nav ul li:nth-child(3) a.micro:before {
+    content: url(afbeeldingen/testlijstitem2.png);
+    position: absolute;
+    animation: test 1s linear 0.5s;
 }
 
 @keyframes test {
@@ -84,6 +118,49 @@ header > nav > ul > li:nth-child(3) > a > img.micro {
     }
 }
 
+header {
+    background: url(afbeeldingen/headersmall2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25em;
+    transition: all 0.15s;
+}
+
+header#home {
+    background: url(afbeeldingen/headertest.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25em;
+    transition: all 0.15s;
+}
+
+section#welkom {
+    display: block;
+    position: absolute;
+    background: none;
+    max-width: 30em;
+    margin-top: -21em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+}
+
+section#welkom > h1 {
+    color: white;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+}
+
+section#welkom > p {
+    color: white;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    font-weight: 100;
+}
+
 
 
 
@@ -91,7 +168,7 @@ header > nav > ul > li:nth-child(3) > a > img.micro {
 
 /** content geel blok **/
 
-section#verder-lezen p {
+section#verder-lezen > p {
     line-height: 1.5;
     color: black;
     margin-bottom: 0;
@@ -106,16 +183,12 @@ section#verder-lezen {
     margin-right: auto;
 }
 
-section#verder-lezen h1 {
+section#verder-lezen > h1 {
     font-size: 2em;
     font-weight: 400;
     margin-top: -0.3em;
     padding-top: 0.2em;
     margin-bottom: 0.2em;
-}
-
-section#verder-lezen div a article {
-    width: 15em;
 }
 
 /** content witte blokken **/
@@ -134,7 +207,7 @@ section {
     padding: 32px 32px 32px 32px;
 }
 
-section h2 {
+section > h2 {
     font-size: 1.5em;
     font-weight: 400;
     margin-top: 0;
@@ -142,7 +215,7 @@ section h2 {
 
 /* verhalen */
 
-section div {
+section > div {
     display: flex;
     justify-content: left;
     overflow-x: scroll;
@@ -226,7 +299,7 @@ form {
     margin-bottom: 1em;
 }
 
-form fieldset {
+form > fieldset {
     border: none;
     padding: 0;
 }
@@ -282,7 +355,7 @@ form a {
     margin-top: 1em;
 }
 
-form a:hover {
+form > a:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
@@ -302,20 +375,20 @@ section#filter {
     position: relative;
 }
 
-section#filter img {
+section#filter > img {
     width: 3.8em;
     height: 2.5em;
     margin-left: auto;
     margin-top: -0.4em;
 }
 
-section#filter h2 {
+section#filter > h2 {
     margin-right: auto;
     margin-top: 0.em;
     font-size: 1.2em
 }
 
-section#filter fieldset {
+section#filter > fieldset {
     margin-top: -0.3em;
     justify-content: flex-end;
     align-items: flex-end;
@@ -347,37 +420,37 @@ main {
     margin-bottom: 1em;
 }
 
-main a:nth-child(1) {
+main > a:nth-child(1) {
     background: url(afbeeldingen/thumbnail1.jpg);
     background-size: cover;
     text-decoration: none;
 }
 
-main a:nth-child(2) {
+main > a:nth-child(2) {
     background: url(afbeeldingen/thumbnail2.jpg);
     background-size: cover;
     text-decoration: none;
 }
 
-main a:nth-child(3) {
+main > a:nth-child(3) {
     background: url(afbeeldingen/thumbnail10.jpg);
     background-size: cover;
     text-decoration: none;
 }
 
-main a article {
+main > a > article {
     background: white;
     margin-top: 10em;
     height: 3em;
 }
 
-main a article h3 {
+main > a > article h3 {
     margin-left: 2em;
     margin-top: 0.8em;
     position: absolute;
 }
 
-main a article h3:hover {
+main > a > article h3:hover {
     color: #003082;
 }
 
@@ -399,7 +472,7 @@ section#verhaal-detail {
     padding-bottom: 1em;
 }
 
-section#verhaal-detail h1 {
+section#verhaal-detail > h1 {
     font-size: 2em;
     font-weight: 400;
     margin-top: -0.3em;
@@ -407,7 +480,7 @@ section#verhaal-detail h1 {
     margin-bottom: 0.2em;
 }
 
-section#verhaal-detail a {
+section#verhaal-detail > a {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -421,7 +494,7 @@ section#verhaal-detail a {
     margin-top: 1em;
 }
 
-section#verhaal-detail a:hover {
+section#verhaal-detail > a:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
@@ -434,7 +507,7 @@ section#verhaal-detail button img.addlist {
     margin: 0;
 }
 
-section#verhaal-detail button {
+section#verhaal-detail > button {
     padding: 0em;
     width: 4em;
     float: right;
@@ -445,16 +518,16 @@ section#verhaal-detail button {
     border: none;
 }
 
-section#verhaal-detail button:hover {
+section#verhaal-detail > button:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
 
-section#verhaal-detail button:focus {
+section#verhaal-detail > button:focus {
     transition: none;
 }
 
-section#verhaal-detail p {
+section#verhaal-detail > p {
     color: white;
     background: #003082;
     width: 5em;
@@ -484,7 +557,7 @@ form#reviews label {
     display: none;
 }
 
-form#reviews fieldset img {
+form#reviews > fieldset > img {
     width: 5em;
     position: absolute;
     margin-top: -2.5em;
@@ -496,32 +569,32 @@ form#reviews legend {
     margin-bottom: 0.8em;
 }
 
-/* reviews */
+/* review overzicht*/
 
-section#reviewoverzicht img {
+section#reviewoverzicht {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+section#reviewoverzicht > img {
     width: 5em;
     position: absolute;
     margin-top: -2.5em;
     margin-left: 8em;
 }
 
-section#reviewoverzicht h4 {
+section#reviewoverzicht > h4 {
     padding-bottom: 0.5em;
     margin-bottom: 0;
 }
 
-section#reviewoverzicht p {
+section#reviewoverzicht > p {
     border: 1px solid #e6e6e9;
     padding: 1em;
     line-height: 1.5em;
     margin-bottom: 1em;
     margin-top: 0;
     color: black;
-}
-
-section#reviewoverzicht {
-    margin-bottom: 1em;
-    padding-bottom: 1em;
 }
 
 
@@ -538,7 +611,7 @@ section#mijn-lijst {
     margin-right: auto;
 }
 
-section#mijn-lijst h1 {
+section#mijn-lijst > h1 {
     font-size: 2em;
     font-weight: 400;
     margin-top: -0.3em;
@@ -546,11 +619,11 @@ section#mijn-lijst h1 {
     margin-bottom: 0;
 }
 
-main a article {
+main > a > article {
     display: flex;
 }
 
-main a img {
+main > a img {
     width: 2.5em;
     height: 2em;
     margin-left: auto;
@@ -564,12 +637,12 @@ main a img {
 
 /**----------MIJN LIJST LEEG----------**/
 
-section#lege-lijst a:hover {
+section#lege-lijst > a:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
 
-section#lege-lijst a {
+section#lege-lijst > a {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -582,7 +655,7 @@ section#lege-lijst a {
     text-align: center;
 }
 
-section#lege-lijst p {
+section#lege-lijst > p {
     line-height: 1.5;
     color: black;
 }
@@ -601,7 +674,7 @@ section#alle-verhalen {
     margin-right: auto;
 }
 
-section#alle-verhalen h1 {
+section#alle-verhalen > h1 {
     font-size: 2em;
     font-weight: 400;
     margin-top: -0.3em;
@@ -615,19 +688,54 @@ section#alle-verhalen h1 {
 
 /**----------ACCOUNT----------**/
 
-form#account input {
+form#account {
+    margin-top: 2em;
+    background: white;
+    padding-bottom: 1em;
+}
+
+form#account > input,
+form#inloggen > input {
     margin-top: 0.2em;
     margin-bottom: 1em;
 }
 
-form#account input:valid {
+form#account input {
+    border: 1px solid #e6e6e9;
+}
+
+form#account input:valid,
+form#inloggen input:valid {
     margin-top: 0.2em;
     margin-bottom: 1em;
     background: white;
 }
 
-input.microinter2 {
-    border: 1px solid white;
+form#account input:focus,
+form#inloggen input:focus {
+    border: 1px solid #0079d3;
+    background: #e6e6e9;
+}
+
+div#accountpagina form#inloggen p,
+div#accountpagina form#account p {
+    font-size: 0.8em;
+    color: red;
+    margin-top: 0.2em;
+    margin-bottom: 0;
+    margin-right: 0;
+    float: right;
+    opacity: 0;
+}
+
+div#accountpagina form#inloggen p.microinter2,
+div#accountpagina form#account p.microinter2 {
+    opacity: 100;
+}
+
+div#accountpagina form#inloggen p.microinter3,
+div#accountpagina form#account p.microinter3 {
+    opacity: 0;
 }
 
 input.microinter {
@@ -648,66 +756,73 @@ input.microinter {
     }
 }
 
-form#account input:focus {
-    border: 1px solid #0079d3;
-    background: #e6e6e9;
-}
-
-form#account a:hover {
-    box-shadow: #005ca0 inset 0 -125em 0;
-    transition: 2s;
-}
-
-form#account p {
-    margin-bottom: 0;
-}
-
-form#account p a {
-    color: #0079d3;
+form#inloggen > fieldset > a {
     background: none;
-    padding: 0;
-    margin: 0;
-    width: 3em;
-    display: inline;
+    width: auto;
+    box-shadow: none;
+    float: left;
+    padding-left: 0;
+    color: #0079d3;
+}
+
+form#inloggen > fieldset > a:hover {
     box-shadow: none;
     text-decoration: underline;
 }
 
-form#account p a:hover {
-    transition: none;
-    box-shadow: none;
-    color: #003082;
+form#account > a:hover,
+form#inloggen > a:hover {
+    box-shadow: #005ca0 inset 0 -125em 0;
+    transition: 2s;
 }
-
-
 
 
 
 /*----------HET VERHAAL----------*/
 
-#terugknop,
+
 #versnellen {
     box-sizing: border-box;
     display: block;
-    width: 8em;
-    padding: 0.8em;
-    background: #0079d3;
+    width: 12em;
+    padding: 1em;
+    background: #272726;
     color: white;
     font-weight: 400;
-    box-shadow: inset 0 -0.125rem 0 #005ca0;
+    letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
+    margin: 0 auto;
+    animation: pulse 0.6s infinite;
 }
 
-#terugknop:hover,
-#versnellen:hover {
-    box-shadow: #005ca0 inset 0 -125em 0;
-    transition: 2s;
+body#verhaal1sec > #versnellen {
+    animation: pulse 0.4s infinite;
 }
 
-#versnellen {
-    float: right;
-    margin-top: -2.7em;
+body#verhaal05sec > #versnellen {
+    animation: pulse 0.3s infinite;
+}
+
+body#verhaal02sec > #versnellen {
+    animation: pulse 0.2s infinite;
+}
+
+body#verhaal00sec > #versnellen {
+    animation: pulse 0.1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.1);
+        background-color: #5E5D5C;
+    }
+    70% {
+        background-color: #2E2D2C;
+    }
+    100% {
+        background-color: #272726;
+    }
 }
 
 body#verhaal4sec {
@@ -756,20 +871,6 @@ body#verhaal00sec {
 /** small > medium **/
 
 @media (min-width: 35em) {
-    header {
-        background: url(afbeeldingen/headermedium2.png);
-        height: 30em;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    header#home {
-        background: url(afbeeldingen/headermedium.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
     section,
     form {
@@ -834,20 +935,13 @@ body#verhaal00sec {
         display: inline-block;
     }
 
-    #versnellen {
-        float: right;
-        margin-top: 0em;
-    }
-
-    form#account p {
-        float: right;
-        margin-top: 0;
-    }
-
     form#account fieldset {
         padding-bottom: 1em;
     }
-
+    
+    #versnellen {
+        margin: 0 auto;
+    }
 }
 
 
@@ -861,7 +955,55 @@ body#verhaal00sec {
         height: 62em;
     }
 
+    section#welkom {
+        margin-left: 3em;
+        margin-top: -19em;
+    }
+
 }
+
+@media (min-width: 55em) {
+    div#accountpagina {
+        max-width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 1em;
+        box-sizing: border-box;
+    }
+
+    form#account {
+        margin-top: -4em;
+    }
+
+    form {
+        width: auto;
+    }
+
+    section#welkom {
+        margin-left: 4em;
+        margin-top: -19em;
+    }
+
+    nav ul li span {
+        display: inline;
+    }
+
+    nav ul li a {
+        margin-right: 2em;
+    }
+
+    nav ul li:nth-child(5) a {
+        margin-right: 0;
+    }
+
+    nav ul li a:hover:before {
+        transform: translateX(.5rem);
+        transition: .1s ease-in-out;
+    }
+}
+
+
 
 
 /** medium > big **/
@@ -870,21 +1012,6 @@ body#verhaal00sec {
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
-    header {
-        background: url(afbeeldingen/headerbig2.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    header#home {
-        background: url(afbeeldingen/headerbig.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     body form input {
@@ -898,10 +1025,7 @@ body#verhaal00sec {
     #versnellen {
         float: right;
         margin-top: -5em;
-    }
-
-    #terugknop {
-        margin-top: -5em;
+        margin-right: 0.8em;
     }
 
     body#verhaal4sec,
@@ -914,4 +1038,10 @@ body#verhaal00sec {
         width: auto;
         max-height: 42em;
     }
+
+    section#welkom {
+        margin-left: 8em;
+        margin-top: -19em;
+    }
+
 }

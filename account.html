@@ -15,52 +15,73 @@
             <ul>
                 <li>
                     <a href="index.html">
-                    <img src="afbeeldingen/nslogo.svg" alt="">
+                    <img src="afbeeldingen/nslogotest.png" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="search.html">
-                    <img src="afbeeldingen/search-03.png" alt="">
+                    <span>Zoeken</span>
                     </a>
                 </li>
                 <li>
                     <a href="mijnlijstleeg.html">
-                    <img src="afbeeldingen/list-01.png" alt="">
+                    <span>Mijn lijst</span>
                     </a>
                 </li>
                 <li>
                     <a href="alleverhalen.html">
-                    <img src="afbeeldingen/stories-04.png" alt="">
+                    <span>Bibliotheek</span>
                     </a>
                 </li>
                 <li>
                     <a href="account.html">
-                    <img src="afbeeldingen/account-06.png" alt="">
+                    <span>Account</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+    
+    <div id=accountpagina>
+        <form action="index.html" id='inloggen'>
+            <fieldset>
+                <legend>Log in met uw NS-account</legend>
+                <label for="mail">E-mailadres</label>
+                <p>Voer dit veld nog in</p>
+                <input type="text" id="mail">
 
-    <form action="indexleeg.html" id='account'>
-        <fieldset>
-            <legend>Maak een account aan</legend>
-            <label for="name">Voornaam</label>
-            <input type="text" id="name">
+                <label for="password">Wachtwoord</label>
+                <p>Voer dit veld nog in</p>
+                <input type="password" id="password">
 
-            <label for="mail">E-mailadres</label>
-            <input type="text" id="mail" placeholder="voorbeeld@email.com">
+                <button>Inloggen</button>
+                <a href="#">Wachtwoord vergeten?</a>
+            </fieldset>
+        </form>
 
-            <label for="password">Wachtwoord</label>
-            <input type="password" id="password" placeholder="Minimaal 6 karakters">
+        <form action="indexleeg.html" id='account'>
+            <fieldset>
+                <legend>Maak een NS-account aan</legend>
+                <label for="name2">Voornaam</label>
+                <p>Voer dit veld nog in</p>
+                <input type="text" id="name2">
 
-            <label for="password">Wachtwoord bevestigen</label>
-            <input type="password" placeholder="Minimaal 6 karakters">
+                <label for="mail2">E-mailadres</label>
+                <p>Voer dit veld nog in</p>
+                <input type="text" id="mail2" placeholder="voorbeeld@email.com">
 
-            <button>Submit</button>
-        </fieldset>
-        <p>Heb je al een NS account? <a href="#">Log in</a></p>
-    </form>
+                <label for="password2">Wachtwoord</label>
+                <p>Voer dit veld nog in</p>
+                <input type="password" id="password2" placeholder="Minimaal 6 karakters">
+
+                <label for="password3">Wachtwoord bevestigen</label>
+                <p>Voer dit veld nog in</p>
+                <input type="password" id="password3" placeholder="Minimaal 6 karakters">
+
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </div>
 
     <script src="script/accountscript.js"></script>
 </body>

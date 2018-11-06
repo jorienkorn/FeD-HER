@@ -14,11 +14,11 @@ var listAdded = document.querySelector('img.addlist');
 buttonLijst.addEventListener('click', function () {
     navigatieLijst.classList.toggle('micro');
     if (listAdded.src.includes("toegevoegdlijst-09.png")) {
-        listAdded.src = "afbeeldingen/toevoegenlijst-05-05.png";
-        navigatieLijst.src ="afbeeldingen/testlijst2";
+        listAdded.src = "styles/afbeeldingen/toevoegenlijst-05-05.png";
+        navigatieLijst.src ="styles/afbeeldingen/testlijst2";
     } else {
-        listAdded.src = "afbeeldingen/toegevoegdlijst-09.png";
-        navigatieLijst.src ="afbeeldingen/testlijstitem2";
+        listAdded.src = "styles/afbeeldingen/toegevoegdlijst-09.png";
+        navigatieLijst.src ="styles/afbeeldingen/testlijstitem2";
     }
 
 });

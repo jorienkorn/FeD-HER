@@ -241,12 +241,12 @@ section > div > a > article {
     overflow: hidden;
 }
 
-section#verder-lezen > div > a > article {
+section#verder-lezen div a article {
     width: 14em;
 }
 
-section#verder-lezen > div > a > article > img,
-section > div > a > article > img {
+section#verder-lezen div a article img,
+section div a article img {
     width: 100%;
     margin-top: 0.5em;
 }
@@ -272,8 +272,20 @@ main a article h3 {
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 0;
-    /position: absolute;
-    /width: calc(100% - 0.5em);
+}
+
+section div a.vb {
+    margin-top: 0;
+}
+
+section div a.vb article h3 {
+    position: absolute;
+    width: calc(100% - 0.5em);
+    background: white;
+}
+
+section div a.vb article img {
+    margin-top: 2em;
 }
 
 section#verder-lezen div a article h3 {
@@ -316,7 +328,7 @@ form > fieldset {
     padding: 0;
 }
 
-form fieldset legend {
+form > fieldset legend {
     color: #003082;
     font-size: 2em;
     font-weight: 400;
@@ -328,14 +340,14 @@ form#zoeken label {
     display: none;
 }
 
-form fieldset input {
+form > fieldset input {
     width: 96%;
     padding: 1em 0em 1em 1em;
     margin: 0 auto;
     border: 0;
 }
 
-form fieldset button {
+form > fieldset button {
     width: 100%;
     margin-top: 1em;
     border: 0;
@@ -347,12 +359,12 @@ form fieldset button {
     font-family: inherit;
 }
 
-form fieldset button:hover {
+form > fieldset button:hover {
     box-shadow: #005ca0 inset 0 -125em 0;
     transition: 2s;
 }
 
-form a {
+form > a {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -407,16 +419,16 @@ section#filter > fieldset {
     border: 0;
 }
 
-section#filter fieldset legend {
+section#filter > fieldset legend {
     display: none;
 }
 
-section#filter fieldset select {
+section#filter > fieldset select {
     font-family: inherit;
     padding: 0.2em;
 }
 
-section#filter fieldset option {
+section#filter > fieldset option {
     padding: 1em;
     margin: 1em;
 }
@@ -569,7 +581,7 @@ form#reviews label {
     display: none;
 }
 
-form#reviews > fieldset > img {
+form#reviews > fieldset img {
     width: 5em;
     position: absolute;
     margin-top: -2.5em;
@@ -631,7 +643,7 @@ section#mijn-lijst > h1 {
     margin-bottom: 0;
 }
 
-main > a > article {
+main > a article {
     display: flex;
 }
 
@@ -671,6 +683,7 @@ section#lege-lijst > p {
     line-height: 1.5;
     color: black;
 }
+
 
 
 

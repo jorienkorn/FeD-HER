@@ -788,6 +788,7 @@ form#inloggen > fieldset > a {
     float: left;
     padding-left: 0;
     color: #0079d3;
+    padding-top: 1em;
 }
 
 form#inloggen > fieldset > a:hover {
